@@ -1,5 +1,5 @@
 {
-  "name": "@mxbck/eleventy-plugin-share-highlight",
+  "name": "eleventy-plugin-share-highlight",
   "version": "0.1.0",
   "description": "A medium-style text highlight that can be shared through the Web Share API.",
   "homepage": "",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/repo-name.git"
+    "url": "git+https://github.com/maxboeck/eleventy-plugin-share-highlight"
   },
   "keywords": [
     "11ty",
@@ -20,12 +20,12 @@
     "eleventy-plugin"
   ],
   "author": {
-    "name": "mxbck",
+    "name": "maxboeck",
     "url": "https://mxb.dev"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/username/repo-name/issues"
+    "url": "https://github.com/maxboeck/eleventy-plugin-share-highlight/issues"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1"
