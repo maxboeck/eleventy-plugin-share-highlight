@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plugin Test Page</title>
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/share-highlight.js" async defer />
-</head>
-<body>
-  {{ content | safe }}
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plugin Test Page</title>
+
+        <link rel="stylesheet" href="/styles.css">
+        <style>
+            .test {
+                font-size: 1.5rem;
+                font-family: -apple-system, sans-serif;
+                line-height: 1.5;
+                margin: 2rem auto;
+                max-width: 50ch;
+            }
+        </style>
+        <script src="/share-highlight.js" async defer />
+    </head>
+    <body>
+        <div class="test">
+            {{ content | safe }}
+        </div>
+    </body>
 </html>

@@ -5,8 +5,8 @@
   "homepage": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "eleventy --serve --input=./test",
-    "build": "eleventy",
+    "start": "eleventy --serve --config=test/.eleventy.test.js",
+    "build": "eleventy --config=test/.eleventy.test.js",
     "bump": "npm --no-git-tag-version version"
   },
   "repository": {

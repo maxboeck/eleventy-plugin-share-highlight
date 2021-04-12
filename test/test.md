@@ -1,14 +1,13 @@
 ---
 layout: base.njk
+permalink: /index.html
 ---
 
 ## Plugin Test Page
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. In vitae turpis massa sed elementum tempus egestas sed. Aliquet risus feugiat in ante metus dictum at tempor. Ut eu sem integer vitae justo. 
 
-Neque laoreet suspendisse interdum consectetur libero id faucibus. Eget aliquet nibh praesent tristique magna sit amet. Aliquam sem et tortor consequat id. Aliquam ut porttitor leo a diam sollicitudin tempor. Libero volutpat sed cras ornare arcu dui vivamus arcu. 
-
-{% highlight %}Leo duis ut diam quam nulla. Diam quis enim lobortis scelerisque. Orci nulla pellentesque dignissim enim sit.{% endhighlight %}
+{% highlight %}Leo duis ut diam quam nulla. Diam quis enim lobortis scelerisque. Orci nulla pellentesque dignissim enim sit. Libero volutpat sed cras ornare arcu dui vivamus arcu.{% endhighlight %}
 
 Cras sed felis eget velit aliquet sagittis id consectetur purus. Tortor id aliquet lectus proin nibh nisl condimentum id.
 
