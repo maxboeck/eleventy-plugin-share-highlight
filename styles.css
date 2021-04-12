@@ -1,0 +1,14 @@
+mark {
+    background-color: yellow;
+}
+share-highlight {
+     /* default state */
+     --share-highlight-text-color: inherit;
+     --share-highlight-bg-color: yellow;
+     /* hover/focus state */
+     --share-highlight-text-color-active: inherit;
+     --share-highlight-bg-color-active: orange;
+     /* tooltip */
+     --share-highlight-tooltip-text-color: #fff;
+     --share-highlight-tooltip-bg-color: #000;
+}
