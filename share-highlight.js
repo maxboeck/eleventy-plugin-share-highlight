@@ -1,7 +1,7 @@
 class ShareHighlight extends HTMLElement {
     constructor() {
         super()
-        this.label = this.getAttribute('label') || 'Share this'
+        this.label = this.getAttribute('aria-label') || 'Share this'
 
         this.attachShadow({ mode: 'open' })
         this.shadowRoot.appendChild(this.template.content.cloneNode(true))
@@ -23,8 +23,8 @@ class ShareHighlight extends HTMLElement {
                 display: block;
             }
             ::slotted(mark) {
-                color: var(--share-highlight-text-color);
-                background-color: var(--share-highlight-bg-color);
+                color: var(--share-highlight-text-color) !important;
+                background-color: var(--share-highlight-bg-color) !important;
             }
             :host(:hover) ::slotted(mark),
             :host(:focus) ::slotted(mark) {
@@ -99,7 +99,13 @@ class ShareHighlight extends HTMLElement {
         if (!this.hasAttribute('aria-label')) {
             this.setAttribute('aria-label', this.label)
         }
+
         this.shadowRoot.addEventListener('click', () => this.share())
+        this.shadowRoot.addEventListener('keydown', (e) => {
+            if (e.keyCode === 13 || e.key === 'Enter') {
+                this.share()
+            }
+        })
     }
 
     shareData() {

@@ -7,6 +7,6 @@ module.exports = (eleventyConfig, options) => {
             label: 'Share this'
         }
         const { label } = Object.assign({}, defaults, options)
-        return `<share-highlight label="${label}"><mark>${content}</mark></share-highlight>`
+        return `<share-highlight aria-label="${label}"><mark>${content}</mark></share-highlight>`
     })
 }
