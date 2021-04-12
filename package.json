@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-share-highlight",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A medium-style text highlight that can be shared through the Web Share API.",
   "homepage": "",
   "main": ".eleventy.js",
