@@ -16,7 +16,10 @@ class ShareHighlight extends HTMLElement {
                 position:relative;
                 display:inline;
                 cursor:pointer;
-                outline:0;
+            }
+            :host(:hover),
+            :host(:focus) {
+                outline: .15em solid var(--share-highlight-bg-color-active);
             }
             :host(:hover) .tooltip,
             :host(:focus) .tooltip {
@@ -100,9 +103,9 @@ class ShareHighlight extends HTMLElement {
             this.setAttribute('aria-label', this.label)
         }
 
-        this.shadowRoot.addEventListener('click', () => this.share())
-        this.shadowRoot.addEventListener('keydown', (e) => {
-            if (e.keyCode === 13 || e.key === 'Enter') {
+        this.addEventListener('click', () => this.share())
+        this.addEventListener('keydown', (e) => {
+            if (e.key && e.key.toLowerCase() === 'enter') {
                 this.share()
             }
         })

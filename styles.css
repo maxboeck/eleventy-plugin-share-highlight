@@ -4,11 +4,11 @@ mark {
 share-highlight {
      /* default state */
      --share-highlight-text-color: inherit;
-     --share-highlight-bg-color: yellow;
+     --share-highlight-bg-color: hsl(180, 40%, 85%);
      /* hover/focus state */
      --share-highlight-text-color-active: inherit;
-     --share-highlight-bg-color-active: orange;
+     --share-highlight-bg-color-active: hsl(180, 40%, 75%);
      /* tooltip */
-     --share-highlight-tooltip-text-color: #fff;
-     --share-highlight-tooltip-bg-color: #000;
+     --share-highlight-tooltip-text-color: hsl(0, 0%, 100%);
+     --share-highlight-tooltip-bg-color: hsl(0, 0%, 0%);
 }
