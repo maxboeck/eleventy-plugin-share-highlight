@@ -17,7 +17,9 @@
     "11ty",
     "11ty-plugin",
     "eleventy",
-    "eleventy-plugin"
+    "eleventy-plugin",
+    "highlight",
+    "sharing"
   ],
   "author": {
     "name": "maxboeck",
