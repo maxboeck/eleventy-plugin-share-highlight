@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
 }
 ```
 
-To enable the sharing function, you need to add the [custom element definition](https://github.com/maxboeck/eleventy-plugin-share-highlight/blob/main/share-highlight.js) first. Depending on your setup, you can either include that as part of a bundle by importing it directly:
+To enable the sharing function, you need to add the [custom element definition](https://github.com/maxboeck/eleventy-plugin-share-highlight/blob/main/share-highlight.js) first. Depending on your setup, you can either include that as part of a bundle by importing it:
 
 ```js
 import 'eleventy-plugin-share-highlight/share-highlight'
@@ -45,6 +45,7 @@ Use the paired `{% highlight %}` shortcode to mark pieces of text:
 
 ```md
 <!-- blogpost.md -->
+
 {% highlight %}Here's some highlighted text you can share!{% endhighlight %}
 ```
 
@@ -61,7 +62,7 @@ it will produce this HTML output:
 To style the highlight, add [this piece of CSS](https://github.com/maxboeck/eleventy-plugin-share-highlight/blob/main/styles.css) and customize it to match your design:
 
 ```css
-/* general styles for text highlight */
+/* general styles for text highlights */
 mark {
     background-color: yellow;
 }
