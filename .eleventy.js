@@ -22,7 +22,7 @@ module.exports = (eleventyConfig, options) => {
                     document.querySelectorAll('share-highlight')
                 )
                 const unwrapElement = (el) => {
-                    if (el.childNodes) {
+                    if (el.firstChild) {
                         while (el.firstChild) {
                             el.parentNode.insertBefore(el.firstChild, el)
                         }
