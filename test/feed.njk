@@ -1,0 +1,25 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Test</title>
+    <subtitle>Test Feed</subtitle>
+    <link href="https://test.com/feed.xml" rel="self" type="application/atom+xml" />
+    <author>
+        <name>Max Böck</name>
+    </author>
+    <id>https://test.com/</id>
+    {%- for post in collections.posts | reverse -%}
+        <entry>
+            <title>{{ post.data.title }}</title>
+            <link href="{{ post.url }}"/>
+            <updated>2021-01-01T00:00:00+00:00</updated>
+            <id>{{ post.url }}</id>
+            <content type="html"><![CDATA[
+                {{ post.templateContent | safe }}
+            ]]></content>
+        </entry>
+    {%- endfor -%}
+</feed>

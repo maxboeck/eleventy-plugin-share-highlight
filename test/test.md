@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 permalink: /index.html
+tags: posts
 ---
 
 ## Plugin Test Page
